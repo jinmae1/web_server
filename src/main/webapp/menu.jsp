@@ -61,7 +61,7 @@ th,td {border:1px solid black; padding:10px;}
 	</table>
 	<br /><br />
 	
-	<form name="menuFrm">
+	<form name="menuFrm" action="/web/menuOrder.do">
 		메인메뉴 : 
 		<select id="mainMenu" name="mainMenu" required>
 			<option value="" disabled selected>햄버거를 선택하세요.</option>

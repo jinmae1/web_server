@@ -33,4 +33,13 @@
   	<url-pattern>/testPerson2.do</url-pattern>
   </servlet-mapping>
 
+    <servlet>
+  	<servlet-name>MenuOrder</servlet-name>
+  	<servlet-class>com.kh.web.MenuOrder</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>MenuOrder</servlet-name>
+  	<url-pattern>/menuOrder.do</url-pattern>
+  </servlet-mapping>
+
 </web-app>

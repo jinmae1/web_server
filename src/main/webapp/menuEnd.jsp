@@ -1,5 +1,12 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
+
+<%
+	final String mainMenu = request.getParameter("mainMenu");
+	final String sideMenu = request.getParameter("sideMenu");
+	final String drinkMenu = request.getParameter("drinkMenu");
+	final String price = (String)request.getAttribute("price");
+%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -28,10 +35,10 @@ span#price {
 </head>
 <body>
 	<h2>감사합니다.</h2>
-	<span id="mainMenu"></span>,
-	<span id="sideMenu"></span>,
-	<span id="drinkMenu"></span>을/를 주문하셨습니다.
+	<span id="mainMenu"><%= mainMenu %></span>,
+	<span id="sideMenu"><%= sideMenu %></span>,
+	<span id="drinkMenu"><%= drinkMenu %></span>을/를 주문하셨습니다.
 	<br /> 총 결제금액은
-	<span id="price">원</span> 입니다.
+	<span id="price"><%= price %>원</span> 입니다.
 </body>
 </html>
